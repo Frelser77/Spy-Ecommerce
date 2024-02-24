@@ -1,0 +1,165 @@
+﻿/* Banner home */
+.homeBanner {
+    position: relative;
+    width: 100%;
+    height: 18vw;
+    margin-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    padding-left: 9.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/* Media query per dispositivi piccoli a medi */
+@media (max-width: 768px) {
+    .homeBanner {
+        height: 50vw; /* Altezza diversa per dispositivi piccoli a medi */
+    }
+}
+    .homeBanner::before {
+        content: ""; 
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(-220deg, rgba(0, 0, 0, 0.5) 0%, rgba(92, 219, 149, 0.5) 60%), url('../images/bannerEE.png'); 
+        background-size: cover;
+        background-position: 100% 30%;
+        filter: grayscale(60%); 
+        opacity: 0.6; 
+        z-index: -1; 
+    }
+/* Footer */
+footer{
+    margin-top: 1rem;
+}
+
+footer p, 
+footer a {
+    opacity: 0.7;
+}
+
+footer ul {
+        list-style: none;
+        font-size: 0.9rem;
+}
+
+    footer ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+    color: #5cdb95;
+}
+
+/* Personalizzazione delle card */
+.card-custom {
+    margin-bottom: 1.5rem;
+}
+
+ .title {
+    color: white;
+    font-size: 1.25rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.price {
+    color: white;
+    text-align: center;
+}
+
+.card-img-top-default {
+    height: 150px;
+    width:auto;
+    object-fit: cover;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.3s linear;
+    transition: 0.5s ease-in;
+    filter: grayscale(100%);
+}
+
+.card-img-top:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.card-body-default {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*.card-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}*/
+
+.card-footer-default {
+    margin-top: auto;
+}
+
+
+/* Personalizzazione dei bottoni */
+.btn-custom {
+    background-color: #2E6D4A;
+    border: none;
+    margin: 0,8rem;
+}
+
+    .btn-custom:hover,
+    .btn-custom:active,
+    .btn-custom:focus,
+    .btn-custom:focus-visible,
+    .btn-custom:focus-within{
+        background-color: #5cdb95 !IMPORTANT;
+    }
+
+    .btn-custom svg {
+        color: black;
+    }
+
+/* Ads */
+
+.carousel-style {
+    opacity: 0.5;
+}
+
+.carousel-style:hover {
+    opacity: 1;
+}
+/* .sideAds {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    z-index: 10;
+}*/
+/* Personalizzazione del messaggio di benvenuto */
+.welcome-message {
+    color: #5cdb95;
+    font-weight: 600;
+}
+
+.hover:hover {
+    background-color: #07100A;
+}
+
+.btn-buy {
+    padding-inline: 50px;
+}

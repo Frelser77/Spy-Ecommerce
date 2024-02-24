@@ -1,0 +1,108 @@
+﻿
+
+/* GridAdminPage.css */
+
+
+
+.resultsGrid {
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    min-width: 400px;
+    color: #333333;
+    background-color: #ffffffde;
+    border: 0px;
+    border-radius: 5px;
+}
+    .resultsGrid tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+        .resultsGrid tr:nth-child(even):hover {
+            background-color: #ddd; 
+        }
+
+    
+    .resultsGrid tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+        /* Stile per le righe dispari al hover - sfondo chiaro */
+        .resultsGrid tr:nth-child(odd):hover {
+            background-color: #f2f2f2; /* O un altro colore chiaro che preferisci */
+        }
+    .resultsGrid tr:hover {
+        background-color: #ddd;
+    }
+
+    .resultsGrid tr:first-child {
+        background-image: linear-gradient(-220deg, #5cdb95 0%, #333333 100%);
+        color: #000;
+    }
+  
+    .resultsGrid th,
+    .resultsGrid td {
+        padding: 12px 15px;
+        text-align: left;
+    }
+
+    .resultsGrid tfoot tr td {
+        font-size: 0.8em;
+    }
+
+
+
+
+.select-dropdown {
+    font-family: Arial, sans-serif;
+    padding: .6em 1.4em .5em .8em;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: .3em;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+
+    .select-dropdown:hover {
+        border-color: #888;
+    }
+
+
+    .select-dropdown:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+        box-shadow: 0 0 0 3px;
+        color: #222;
+        outline: none;
+    }
+
+
+    .select-dropdown option {
+        padding: 0px 2px;
+    }
+
+.bottoneMenuAdmin {
+    font-weight:600;
+    background-color: #2E6D4A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    }
+    .bottoneMenuAdmin:hover, .bottoneMenuAdmin:active, .bottoneMenuAdmin:focus-visible, .bottoneMenuAdmin:focus-within, .bottoneMenuAdmin:focus {
+        color: #000 !IMPORTANT;
+        background-color: #5cdb95 !IMPORTANT;
+    }

@@ -1,0 +1,78 @@
+﻿/* Stili per il form come in stile Apple */
+.form-group label {
+    font-weight: normal;
+    color: #000;
+    font-size: 17px;
+}
+
+.form-control {
+    background-color: #f7f7f7;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+    .form-control:focus {
+        background-color: #fff;
+        border-color: #007aff;
+        outline: 0;
+        box-shadow: inset 0 1px 2px rgba(0, 122, 255, 0.25);
+    }
+
+.btn-primary {
+    background-color: #007aff;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 20px;
+    letter-spacing: normal;
+    border: none;
+    border-radius: 18px;
+}
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+        background-color: #0051ba;
+        border-color: #003d82;
+    }
+
+/* Stile per l'immagine del carrello e il totale */
+.img-fluid {
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.lblTotaleCarrello {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Stile per il titolo della pagina */
+.text-center {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* Pulisce il focus sui pulsanti e gli input */
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Stile per validazione form */
+.needs-validation .form-control:invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + .75rem);
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg ...>...</svg>');
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+    .needs-validation .form-control:invalid:focus {
+        border-color: #dc3545;
+        box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .25);
+    }

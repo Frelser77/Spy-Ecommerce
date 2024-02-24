@@ -1,0 +1,404 @@
+﻿/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+
+/* End Fonts */
+/* Start Global rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* End Global rules */
+
+/* Start body rules */
+body {
+    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);*/
+    background-image: linear-gradient(to top, #378158 0%, #000 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*   the main font */
+    font-family: 'Abel', sans-serif;
+    opacity: .95;
+    /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+}
+/* End body rules */
+
+/* Start form  attributes */
+form {
+    width: 450px;
+    min-height: 410px;
+    height: auto;
+    border-radius: 5px;
+    margin: 5% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-220deg, #5cdb95 0%, #000000 60%);
+}
+
+    /* form Container */
+    form .con {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: center;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+/* the header form form */
+header {
+    margin: 2% auto 5% auto;
+    text-align: center;
+}
+
+    /* Login title form form */
+    header h2 {
+        font-size: 250%;
+        font-family: 'Playfair Display', serif;
+        color: #000000;
+    }
+
+    /*  A welcome message or an explanation of the login form */
+    header p {
+        letter-spacing: 0.05em;
+        color: #000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+
+.input-item {
+    background: white;
+    color: #000000;
+    border-radius: 5px 0px 0px 5px;
+    position: relative;
+    padding: 12px 14px 14px 14px;
+    top: 2.6px;
+    left: 5px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+    /* Show/hide password Font Icon */
+    #eye {
+        border-radius: 0px 5px 5px 0px;
+        position: absolute;
+        top: 20px;
+        right: 9%;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+/* inputs form  */
+input[class="form-input"] {
+    width: 240px;
+    height: 50px;
+    margin-top: 2%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #000000;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    transition: 0.2s linear;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    /* Firefox */
+}
+
+input[id="txt-input"] {
+    width: 250px;
+}
+
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+/* input[type="text"] {min-width: 250px;} */
+/* buttons  */
+button {
+    margin-block: 2%;
+    color: #000000;
+    background: #5cdb95;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-doblue {
+    width: 280px;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.other {
+    display: flex;
+    width: 90%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass, .sign-up {
+    margin-top: 10px;
+    background-color: #00000095 !important;
+}
+
+    .sign-up:hover,
+    .frgt-pass:hover,
+    .btn-pstn {
+        background-color: #000;
+        color: white;
+        border: 2px solid #5cdb95;
+    }
+
+/* buttons hover */
+button:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.error {
+    color: red;
+font-size: 18px;
+}
+
+.btn-pstn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+}
+
+.btn-pstn:focus{
+    outline:none;
+    border:none;
+}
+
+.con {
+    position: relative;
+}
+
+/* Flip card */
+
+.flip {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.card__front, .card__back {
+    backface-visibility: hidden;
+}
+
+.card__back {
+    transform: rotateY(180deg);
+}
+
+.flipped {
+    transform: rotateY(180deg); 
+}
+/*
+.card {
+    --flow-space: 0.5em;
+    --hsl: var(--hue), var(--saturation), var(--lightness);
+    flex: 1 1 14rem;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+}
+
+    .card {
+        --hue: 165;
+        --saturation: 82.26%;
+        --lightness: 51.37%;
+    }*/
+
+/* ################# LOADING ################# */
+#loader {
+    display: none; 
+    position: absolute; 
+    top: 550px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1000; 
+}
+
+.hand {
+    width: 16em;
+    height: 8em;
+    font-size: 10px;
+    position: relative;
+    color: darksalmon;
+}
+
+    .hand::before {
+        content: "";
+        position: absolute;
+        width: 14em;
+        height: 4.5em;
+        background-color: black;
+        border-radius: 4em 1em;
+        top: 4em;
+        filter: blur(1em) opacity(0.3);
+    }
+
+.palm {
+    position: absolute;
+    width: 8em;
+    height: 6em;
+    background-color: currentColor;
+    border-radius: 1em 4em;
+    right: 0;
+}
+
+.thumb {
+    position: absolute;
+    width: 9.6em;
+    height: 3.2em;
+    background-color: currentColor;
+    border-radius: 3em 2em 2em 1em;
+    right: 0;
+    bottom: 1em;
+    transform-origin: calc(100% - 2em) 2em;
+    transform: rotate(-20deg);
+    border-bottom: 0.2em solid rgba(0, 0, 0, 0.1);
+    border-left: 0.2em solid rgba(0, 0, 0, 0.1);
+}
+
+    .thumb::before {
+        content: "";
+        position: absolute;
+        width: 1.9em;
+        height: 1.9em;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 60% 10% 10% 30%;
+        bottom: -0.3em;
+        left: 0.5em;
+        border-right: 0.1em solid rgba(0, 0, 0, 0.1);
+    }
+
+.finger:not(:first-child) {
+    position: absolute;
+    width: 6.4em;
+    height: 3.5em;
+    background-color: currentColor;
+    right: 5.2em;
+    bottom: 4em;
+    transform-origin: 100% 2em;
+    transform: rotate(10deg);
+    --scale: calc(1 - (5 - var(--n)) * 0.2);
+    transform: rotate(10deg) scale(var(--scale));
+    filter: brightness(calc(100% - (5 - var(--n)) * 10%));
+    animation: tap-upper 1.2s ease-in-out infinite;
+    animation-delay: calc((var(--n) - 2) * 0.1s);
+}
+
+@keyframes tap-upper {
+    0%, 50%, 100% {
+        transform: rotate(10deg) scale(var(--scale));
+    }
+
+    40% {
+        transform: rotate(50deg) scale(var(--scale));
+    }
+}
+
+.finger:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    height: 3em;
+    background-color: currentColor;
+    right: 4.2em;
+    top: 0.2em;
+    border-radius: 2em;
+    transform-origin: calc(100% - 2em) 2em;
+    transform: rotate(-60deg);
+}
+
+.finger:nth-child(2) {
+    --n: 2;
+}
+
+.finger:nth-child(3) {
+    --n: 3;
+}
+
+.finger:nth-child(4) {
+    --n: 4;
+}
+
+.finger:nth-child(5) {
+    --n: 5;
+}
+
+
+
+#LoginButton {
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border 0.4s ease-in-out;
+
+}
+
+#LoginButton:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid #5cdb95;
+}
+
+/* itemS con la s finale + password-feedback fanno parte dello stile di ForgotPasswordPage */
+.input-items {
+    background: white;
+    color: #000000;
+    border-radius: 5px 0px 0px 5px;
+    position: relative;
+    padding: 0px;
+    height: fit-content;
+    /*padding: 12px 12px 12px 12px; */
+    font-size: 16px;
+    vertical-align: middle;
+    top: 5.6px;
+    left: 5px;
+    z-index: 5;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+    .input-items i {
+        margin: 0;
+        padding: 15px;
+    }
+
+.password-feedback {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}

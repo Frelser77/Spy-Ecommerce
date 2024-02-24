@@ -1,0 +1,133 @@
+﻿/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+/*
+
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ Set widths on the form inputs since otherwise they're 100% wide 
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+ Responsive: Portrait tablets and up 
+@media screen and (min-width: 768px) {
+    .body-content {
+        padding: 0;
+    }
+}
+*/
+
+
+body {
+   /* background-color: #BECA9F;*/
+   background-color: #000;
+}
+
+
+html {
+    scroll-behavior:auto;
+}
+
+.card-footer {
+    border: none;
+}
+
+.dropdown-menu.show {
+    background: #3A895D;
+    display: block;
+    top: 55px;
+    right: -60px;
+}
+
+.dropdown-item {
+    color: white;
+    background-color: transparent;
+}
+
+    .dropdown-item:hover, .dropdown-item:focus {
+        color: white;
+        background-color: #11281ca3;
+    }
+
+.bg-drop  {
+    color: #fff;
+    background-color: #57D08D;
+}
+
+    .bg-drop:hover, .bg-drop:active, .bg-drop:focus, .bg-drop:focus-visible, .bg-drop:focus-within, .bg-drop:target {
+        color: #000;
+        background-color: #11281C !IMPORTANT;
+    }
+
+.srch-bg  {
+    fill: #000;
+    background-color: #5cdb95;
+}
+
+    .srch-bg:hover, .srch-bg:active,
+    .srch-bg:focus, .srch-bg:focus-within, .srch-bg:focus-visible, .srch-bg:target{
+        fill: #fff;
+        background-color: #11281C !IMPORTANT;
+    }
+
+.srch-bg svg {
+    fill: #fff;
+}
+
+.srch-bg:hover svg {
+    fill: #000;
+}
+
+    btn {
+    border-width: inherit !important;
+}
+
+/* SCROLL BAR */
+
+/* Personalizza l'intera scrollbar (la traccia) */
+::-webkit-scrollbar {
+    width: 12px; /* Larghezza della scrollbar */
+}
+
+/* Personalizza il colore di sfondo della traccia della scrollbar */
+::-webkit-scrollbar-track {
+    background: #000000c6; /* Cambia questo colore per modificare lo sfondo della traccia */
+}
+
+/* Personalizza il colore dello slider (la parte mobile della scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #08110B; /* Cambia questo colore per modificare lo slider */
+}
+
+    /* Cambia il colore dello slider al passaggio del mouse */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Cambia questo colore per modificare il colore al passaggio del mouse */
+    }
+
+.profile-card {
+    background-image: linear-gradient(-220deg, #c8f4dc 0%, #333333 60%);
+    opacity: 0.8;
+    transition: background-color 0.4s linear, opacity 0.2s linear;
+}
+
+    .profile-card:hover {
+        background-image: linear-gradient(-220deg, #333333 0%, #5cdb95 60%);
+        opacity: 1;
+    }
+
+.text--stroke-profile {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px #3B8C5F;
+    text-align: center;
+}
+
+    .text--stroke-profile:hover {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1.5px #54C889;
+    }

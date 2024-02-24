@@ -1,0 +1,113 @@
+﻿body {
+    background-color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*   the main font */
+    font-family: 'Abel', sans-serif;
+    opacity: .95;
+}
+
+h5 {
+    font-family: 'Playfair Display', serif;
+    color:white;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+button {
+    font-family: inherit;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.cart-img {
+    height: 50px;
+    width: 50px;
+}
+.svuotaCarrello {
+    background-color: transparent;
+    border: 1px solid red;
+    margin: 0, 8rem;
+    transition: all 0.3s;
+    color: white;
+}
+
+.btn-customRemoveOne {
+    background-color: transparent;
+    border: 1px solid red;
+    margin: 0, 8rem;
+    transition: all 0.3s;
+    color: white;
+}
+
+.btn-customAddOne:hover, .btn-checkOut:hover {
+    color: #000;
+    transform: scale(1.1);
+    background-color: #5cdb95;
+}
+ 
+.btn-customAddOne, .btn-checkOut {
+    background-color: transparent;
+    border: 1px solid #5cdb95;
+    margin: 0, 8rem;
+    transition: all 0.3s;
+    color: white;
+}
+
+.svuotaCarrello:hover {
+    background-color: red;
+    transform: scale(1.1);
+}
+
+
+.btn-customRemoveOne:hover {
+    transform: scale(1.1);
+    background-color: red;
+}
+
+.btn-CardsCarrello {
+    width: 100px;
+}
+
+/*
+.customCardCarrello {
+    border: 1px solid #5cdb95;
+}
+*/
+
+.customCardCarrello {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px); 
+    border: 1px solid rgba(255, 255, 255, 0.25); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor:pointer;
+}
+
+    .customCardCarrello:hover {
+        background-color: rgba(255, 255, 255, 0.25); 
+        transform: scale(1.02);
+    }
+
+
+.img-size {
+    padding: 10px;
+    margin: auto;
+    max-width: 160px;
+}
+
+.custom-link {
+    text-decoration: none; 
+    color: inherit;
+    display: block;
+    margin: auto;
+}
+
+.card-body {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
