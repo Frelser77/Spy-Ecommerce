@@ -1,4 +1,4 @@
-# NomeProgetto
+# Ecommerce
 
 Questo progetto è un'applicazione ecommerce sviluppata con ASP.NET Web Forms e ADO.NET. Un interfaccia semplice di un ecommerce per spie.
 
